@@ -26,7 +26,7 @@
 
 .banner-search-area {
     background: #ffffff;
-    border: 1px solid #8d8d8d;
+    // border: 1px solid #8d8d8d;
     padding: 0;
     width: 70%;
     margin: 0 auto 40px;
@@ -80,6 +80,60 @@
 
 .banner-search-area .input-group-addon:hover button span {
     color: #8bc34a;
+}
+
+// section products
+
+.section {
+    padding: 112px 0 95px;
+    background: #f4f6f5;
+}
+
+.section_title {
+    font-size: 36px;
+    color: #263238;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+// trending_products
+
+.trending_products {
+    padding: 112px 0 95px;
+}
+
+.slick-track {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.slick-dots {
+    margin: 10 auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #e8e8e8;
+}
+
+.slick-dots button {
+    transition: background-color .3s ease;
+    background-color: #8bc34a;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 5px 7px;
+    padding: 0;
+    outline: none;
+    font-size: 0;
+    text-indent: -999px;
+    overflow: hidden;
 }
 
 // Why choose area
@@ -235,6 +289,11 @@
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+.btn-fill-textPrimary:hover {
+    background: transparent;
+    color: #ffffff;
 }
 
 // Tutorials area
