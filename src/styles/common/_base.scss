@@ -2,6 +2,21 @@ body {
   font: $base-f-size $base-f-family;
 }
 
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -21,4 +36,76 @@ body {
 .main {
   width: 100%;
   flex-grow: 1;
+}
+
+.desktop-hidden {
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-hidden {
+
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero {
+
+  &--alt {
+
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &_item {
+    font-size: 15px;
+    color: #263238;
+
+    &:not(:first-of-type) {
+
+      &:before {
+        content: '-';
+        color: $green;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &_link {
+    color: #b0bec5;
+  }
+}
+
+.content {
+  width: calc(100%-300px);
+  padding: 0 15px;
+
+  &:only-child {
+    width: 100%;
+  }
+
+  &_inner {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  &_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &_col {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    max-width: 300px;
+    min-width: 290px;
+  }
 }

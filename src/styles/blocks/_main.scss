@@ -1,6 +1,6 @@
 // Main banner area
 .main-banner-area {
-    background: #95c85a;
+    
 }
 
 .main-banner-wrapper {
@@ -82,6 +82,145 @@
     color: #8bc34a;
 }
 
+@media only screen and (max-width: 767px) {
+    .main-banner-area {
+      margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner-wrapper {
+      padding: 130px 0 135px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-banner-wrapper {
+        padding: 115px 0 120px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-banner-wrapper {
+        padding: 100px 0 105px;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .main-banner-wrapper {
+        padding: 85px 0 90px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-banner-wrapper {
+        padding: 70px 0 75px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner-wrapper h1 {
+      font-size: 42px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-banner-wrapper h1 {
+      font-size: 40px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-banner-wrapper h1 {
+      font-size: 36px;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .main-banner-wrapper h1 {
+      font-size: 32px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-banner-wrapper h1 {
+      font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner-wrapper p {
+      font-size: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-banner-wrapper p {
+      font-size: 18px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-banner-wrapper p {
+      font-size: 16px;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .main-banner-wrapper p {
+      font-size: 15px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-banner-wrapper p {
+      font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner1-wrapper > span {
+      font-size: 34px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-banner1-wrapper > span {
+      font-size: 32px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-banner1-wrapper > span {
+      font-size: 30px;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .main-banner1-wrapper > span {
+      font-size: 28px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-banner1-wrapper > span {
+      font-size: 26px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .banner-search-area {
+      width: 80%;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .banner-search-area {
+      width: 90%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .banner-search-area {
+      width: 95%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-search-area .form-control {
+      top: 3px;
+      font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-search-area .input-group-addon button {
+      padding: 10px 15px;
+    }
+}
+
 // section products
 
 .section {
@@ -96,12 +235,40 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: 45px;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+        font-size: 34px;       
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {        
+            font-size: 32px;        
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {        
+            font-size: 30px;        
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {       
+            font-size: 28px;       
+    }
+
+    @media only screen and (max-width: 320px) {       
+            font-size: 26px;      
+    }
 }
 
 // trending_products
 
 .trending_products {
     padding: 112px 0 95px;
+}
+
+.container_slider {
+
+    @media(max-width: 767px) {
+        margin: 0 auto;
+        max-width: 440px;
+    }    
 }
 
 .slick-track {
@@ -154,10 +321,35 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: 45px;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+        font-size: 34px;        
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {    
+        font-size: 32px;    
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {    
+        font-size: 30px;    
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {    
+        font-size: 28px;   
+    }
+
+    @media only screen and (max-width: 320px) {        
+        font-size: 26px;        
+    }
 }
 
 .flex-wrap-none {
     flex-wrap: nowrap;
+
+    @media only screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
 }
 
 .why-choose-box {
@@ -177,6 +369,26 @@
 .why-choose-box h3 {
     font-size: 24px;
     font-weight: 500;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+          font-size: 24px;        
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {        
+          font-size: 21px;        
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {        
+          font-size: 20px;        
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {        
+          font-size: 18px;        
+    }
+
+    @media only screen and (max-width: 320px) {        
+          font-size: 17px;        
+    }
 }
 
 .why-choose-box h3 a {
@@ -218,6 +430,14 @@
     background: transparent;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .why-choose-box {
+      padding: 0;
+    }
+}
+
+
+
 // Author banner area
 
 .author-banner-area {    
@@ -225,6 +445,11 @@
     width: 100%;
     height: 600px;    
     padding: 70px;
+
+    @media only screen and (max-width: 1199px) {        
+        padding: 0;  
+        height: auto;      
+    }
 }
 
 .author-banner-wrapper {
@@ -249,6 +474,10 @@
     left: 0;
     right: 0;
     background-color: rgba(139, 195, 74, 0.95);
+
+    @media only screen and (max-width: 1199px) {        
+        width: 100%;        
+    }
 }
 
 .author-banner-wrapper .author-banner-content ul li {
@@ -258,6 +487,26 @@
 .author-banner-wrapper .author-banner-content ul li p {
     font-size: 30px;
     color: #ffffff;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+        font-size: 29px;        
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {        
+            font-size: 28px;        
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {        
+            font-size: 27px;        
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {        
+            font-size: 26px;        
+    }
+
+    @media only screen and (max-width: 320px) {        
+            font-size: 24px;        
+    }
 }
 
 .author-banner-wrapper .author-banner-content ul li p span {
@@ -296,6 +545,127 @@
     color: #ffffff;
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .author-banner-wrapper .author-banner-content {
+      width: 72%;
+      padding: 32px 60px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1023px) {
+    .author-banner-wrapper .author-banner-content {
+      width: 75%;
+      padding: 69px 60px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .author-banner-wrapper .author-banner-content {
+      width: 100%;
+      padding: 41px 60px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .author-banner-wrapper .author-banner-content {
+      height: 100%;
+      padding: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .author-banner-wrapper .author-banner-content ul {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .author-banner-wrapper .author-banner-content ul li {
+      display: inherit;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .author-banner-wrapper .author-banner-content ul li:nth-child(1n) {
+      width: 50%;
+      text-align: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .author-banner-wrapper .author-banner-content ul li:nth-child(1n) {
+      width: 100%;
+      text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .author-banner-wrapper .author-banner-content ul li:nth-child(2n) {
+      width: 49%;
+      text-align: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .author-banner-wrapper .author-banner-content ul li:nth-child(2n) {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-search-area .input-group-addon button {
+      padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-search-area .form-control {
+      top: 3px;
+      font-size: 16px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .banner-search-area {
+      width: 80%;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .banner-search-area {
+      width: 90%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .banner-search-area {
+      width: 95%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .inner-banner-wrapper {
+      padding: 50px 0 26px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .inner-banner-wrapper {
+      padding: 45px 0 21px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .inner-banner-wrapper {
+      padding: 40px 0 16px;
+    }
+}
+@media (min-width: 321px) and (max-width: 479px) {
+    .inner-banner-wrapper {
+      padding: 35px 0 11px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .inner-banner-wrapper {
+      padding: 30px 0 6px;
+    }
+}
+
 // Tutorials area
 
 .tutorials-area {
@@ -310,6 +680,26 @@
     font-weight: 500;
     margin-bottom: 45px;
     margin-top: 70px;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+          font-size: 34px;       
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {        
+          font-size: 32px;        
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {        
+          font-size: 30px;        
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {       
+          font-size: 28px;       
+    }
+
+    @media only screen and (max-width: 320px) {       
+          font-size: 26px;      
+    }
 }
 
 .tutorials-title {
@@ -318,6 +708,27 @@
     padding: 30px 15px 15px;
     font-size: 24px;
     font-weight: 600;
+
+    @media (min-width: 992px) and (max-width: 1199px) {        
+        font-size: 22px;       
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {        
+            font-size: 20px;        
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {        
+            font-size: 18px;        
+    }
+
+    @media (min-width: 321px) and (max-width: 479px) {       
+            font-size: 16px;       
+    }
+
+    @media only screen and (max-width: 320px) {       
+            font-size: 14px;      
+    }
+
 }
 
 .tutorials-title a {

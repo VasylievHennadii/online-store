@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+    $('.js-login').on('click', function(){
+        $('.header_btns').slideToggle(400);
+    });
+
+    $('.js-burger').on('click', function() {
+        $(this).toggleClass('nav-active');
+        $('.header_nav').slideToggle(400);
+    });
+
     $('.js_tabs-link').on('click', function(e){
         e.preventDefault();
         var tabNum = $(this).attr('href');
@@ -13,11 +23,47 @@ $(document).ready(function(){
 
 $('.container_slider').slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: true,
+    pauseOnHover: true,
     dots: true,
     arrows: true,
     appendArrows: $('.trending_products-nav'),
     prevArrow: '<button class="testimonials_arrow testimonials_prev"><i class="icon-angle-down"></i></button>',
-    nextArrow: '<button class="testimonials_arrow testimonials_next"><i class="icon-angle-down"></i></button>'
+    nextArrow: '<button class="testimonials_arrow testimonials_next"><i class="icon-angle-down"></i></button>',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3                
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2                                
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,                
+                dots: false,
+                centerMode: true,
+                variableWidth: true                                                                                     
+            }
+        }
+    ]    
+  });
+
+  $(".js_range").ionRangeSlider({
+      type:"double",
+      min: 0,
+      max: 1000,
+      from: 0,
+      to: 600,
+      prefix: "$",
+      skin: "round"
   });

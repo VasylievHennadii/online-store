@@ -1,12 +1,12 @@
 .container {
     width: 100%;
-    max-width: 1200;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 
     &--big {
         max-width: 1920px;
-    }
+    }   
 }
 
 .row {
@@ -24,5 +24,19 @@
 
     &--1-4 {
         width: 25%;
+    }    
+}
+
+@media only screen and (max-width: 767px) {
+    .col--1-1 {
+        width: 100%;   
+        text-align: left;  
+        margin-bottom: 20px;   
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .col--1-2 {
+        width: 50%;        
     }
 }

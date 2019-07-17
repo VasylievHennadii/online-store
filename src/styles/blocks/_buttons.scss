@@ -24,6 +24,10 @@
         &:active {
             background-color: $btn-base-hover;
         }
+
+        @media(max-width: $tablet-df) {
+            margin-bottom: 5px;
+        }
     }
 
     &_warn {
