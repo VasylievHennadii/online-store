@@ -71,12 +71,15 @@
                   </div>
                 </div>
                 <div class="header_btns-drop">
-                  <i class="fas fa-user desktop-hidden"></i>
+                  <button class="header_login-btn js-login desktop-hidden"><i class="fas fa-user"></i></button>
                   <div class="header_btns mobile-hidden">
                     <button class="btn btn_base btn-radius">Login</button>
                     <button class="btn btn_warn btn-radius">Register</button>
                   </div>
-                </div>  
+                </div>
+                <button class="js-burger desktop-hidden nav-active">
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
@@ -123,7 +126,7 @@
           <div class="main-banner-area" style="background: url(images/Shape1.jpg);">
             <div class="container">
               <div class="main-banner-wrapper">
-                <h1>Welcome To Foxtar Market Place!</h1>
+                <!-- <h1>Welcome To Foxtar Market Place!</h1> -->
                 <p>Premium WordPress Themes, Web Templates and Many More ...</p>
                 <div class="banner-search-area">
                   <input class="form-control" placeholder="Search Your Keywords . . ." type="text">
@@ -136,180 +139,615 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs_item">
-                <a href="/" class="breadcrumbs_link">Home</a>
-              </li>
-              <li class="breadcrumbs_item">Catalog</li>
-            </ul>
-            <div class="content_inner">
-              <aside class="sidebar">
-                <div class="sidebar_block">
-                  <div class="sidebar_title">Price Range</div>
-                  <div class="sidebar_main">
-                    <div class="range_holder">
-                      <input type="text" class="js_range">
+          <div class="pagination-area">
+            <div class="container">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs_item">
+                  <a href="/" class="breadcrumbs_link">Home</a>
+                </li>
+                <li class="breadcrumbs_item">Product Page</li>
+              </ul>
+              <div class="content_inner">
+                <aside class="sidebar">
+                  <div class="sidebar_block">
+                    <div class="sidebar_block-inner">
+                      <h3 class="sidebar_block-title">Categories</h3>
+                      <ul class="sidebar-categories-list">
+                        <li class="links-item">
+                          <a href="#"><i class="fas fa-angle-right cursor"></i>WordPress<span>(150)</span></a>
+                        </li>
+                        <li class="links-item">
+                          <a href="#"><i class="fas fa-angle-right cursor"></i>Joomla<span>(100)</span></a>
+                        </li>
+                        <li class="links-item">
+                          <a href="#"><i class="fas fa-angle-right cursor"></i>PSD<span>(50)</span></a>
+                        </li>
+                        <li class="links-item">
+                          <a href="#"><i class="fas fa-angle-right cursor"></i>Plugins<span>(60)</span></a>
+                        </li>
+                        <li class="links-item">
+                          <a href="#"><i class="fas fa-angle-right cursor"></i>Components<span>(40)</span></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-              </aside>
-              <div class="content">
-                <div class="content_toolbar">
-                  <div class="content_toolbar-left">
-                    <button class="btn_sort-order"></button>
-                    <button class="btn_sort"></button>
-                  </div>
-                  <div class="content_toolbar-right">
-                    <button class="btn_layout js-card"></button>
-                    <button class="btn_layout js-list"></button>
-                  </div>
-                </div>
-                <div class="content_row">
-                  <div class="content_col">
-                    <div class="product_card">
-                        <div class="product_card-label product_card-label--most">
-                          <i class="fas fa-bolt"></i>
+                  <div class="sidebar_block">
+                    <div class="sidebar_block-inner">
+                      <h3 class="sidebar_block-title">Price Range</h3>
+                      <div class="sidebar_main">
+                        <div class="range_holder">
+                          <input type="text" class="js_range">
                         </div>
-                        <a href="" class="product_card-img">
-                          <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
-                        </a>
-                        <div class="product_card-main">
-                          <div class="product_card-info">
-                            <a href="" class="product_card-title">Responsive Mobile APP</a>
-                            <div class="product_card-category">site template</div>
-                          </div>
-                          <div class="product_card-price">$19</div>
-                        </div>
-                        <div class="product_card-footer">
-                          <a href="#" class="product_card-author">
-                            <div class="product_card-avatar">
-                              <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
-                            </div>
-                            <div class="product_card-name">Radiustheme</div>
-                          </a>
-                          <div class="product_card-rate">
-                            <ul class="product_card-rating">
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="far fa-star"></i></li>
-                            </ul>
-                            <span class="product_card-counter">(11)</span>
-                          </div>
-                        </div>
-                    </div>
-                  </div> 
-                  <div class="content_col">
-                    <div class="product_card">
-                        <div class="product_card-label product_card-label--most">
-                          <i class="fas fa-bolt"></i>
-                        </div>
-                        <a href="" class="product_card-img">
-                          <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
-                        </a>
-                        <div class="product_card-main">
-                          <div class="product_card-info">
-                            <a href="" class="product_card-title">Responsive Mobile APP</a>
-                            <div class="product_card-category">site template</div>
-                          </div>
-                          <div class="product_card-price">$19</div>
-                        </div>
-                        <div class="product_card-footer">
-                          <a href="#" class="product_card-author">
-                            <div class="product_card-avatar">
-                              <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
-                            </div>
-                            <div class="product_card-name">Radiustheme</div>
-                          </a>
-                          <div class="product_card-rate">
-                            <ul class="product_card-rating">
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="far fa-star"></i></li>
-                            </ul>
-                            <span class="product_card-counter">(11)</span>
-                          </div>
-                        </div>
+                        <button class="sidebar-full-width-btn"><i class="fa fa-search"></i>Search</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="content_col">
-                    <div class="product_card">
-                        <div class="product_card-label product_card-label--most">
-                          <i class="fas fa-bolt"></i>
-                        </div>
-                        <a href="" class="product_card-img">
-                          <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
-                        </a>
-                        <div class="product_card-main">
-                          <div class="product_card-info">
-                            <a href="" class="product_card-title">Responsive Mobile APP</a>
-                            <div class="product_card-category">site template</div>
+                  <div class="sidebar_block">
+                    <div class="sidebar_block-inner">
+                      <h3 class="sidebar_block-title">Top 10 Sellers</h3>
+                      <div class="product_card top-sell">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
                           </div>
-                          <div class="product_card-price">$19</div>
-                        </div>
-                        <div class="product_card-footer">
-                          <a href="#" class="product_card-author">
-                            <div class="product_card-avatar">
-                              <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
-                            </div>
-                            <div class="product_card-name">Radiustheme</div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/80x35/d4d4d4/d4d4d4" alt="card images">
                           </a>
-                          <div class="product_card-rate">
-                            <ul class="product_card-rating">
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="far fa-star"></i></li>
-                            </ul>
-                            <span class="product_card-counter">(11)</span>
-                          </div>
-                        </div>
-                    </div>
-                  </div>  
-                  <div class="content_col">
-                    <div class="product_card">
-                        <div class="product_card-label product_card-label--most">
-                          <i class="fas fa-bolt"></i>
-                        </div>
-                        <a href="" class="product_card-img">
-                          <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
-                        </a>
-                        <div class="product_card-main">
-                          <div class="product_card-info">
-                            <a href="" class="product_card-title">Responsive Mobile APP</a>
-                            <div class="product_card-category">site template</div>
-                          </div>
-                          <div class="product_card-price">$19</div>
-                        </div>
-                        <div class="product_card-footer">
-                          <a href="#" class="product_card-author">
-                            <div class="product_card-avatar">
-                              <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                          <div class="product_card-inner">
+                            <div class="product_card-main">
+                              <div class="product_card-info">
+                                <a href="" class="product_card-title">Responsive Mobile APP</a>
+                                <div class="product_card-category">site template</div>
+                              </div>
+                              <div class="product_card-price">$19</div>
                             </div>
-                            <div class="product_card-name">Radiustheme</div>
-                          </a>
-                          <div class="product_card-rate">
-                            <ul class="product_card-rating">
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="fas fa-star"></i></li>
-                              <li class="product_card-star active"><i class="far fa-star"></i></li>
-                            </ul>
-                            <span class="product_card-counter">(11)</span>
-                          </div>
+                            <div class="product_card-footer">
+                              <a href="#" class="product_card-author">
+                                <div class="product_card-avatar">
+                                  <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                                </div>
+                                <div class="product_card-name">Radiustheme</div>
+                              </a>
+                              <div class="product_card-rate">
+                                <ul class="product_card-rating">
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="far fa-star"></i></li>
+                                </ul>
+                                <!-- <span class="product_card-counter">(11)</span> -->
+                              </div>
+                            </div>
                         </div>
+                      </div>
+                      <div class="product_card top-sell">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/80x35/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-inner">
+                            <div class="product_card-main">
+                              <div class="product_card-info">
+                                <a href="" class="product_card-title">Responsive Mobile APP</a>
+                                <div class="product_card-category">site template</div>
+                              </div>
+                              <div class="product_card-price">$19</div>
+                            </div>
+                            <div class="product_card-footer">
+                              <a href="#" class="product_card-author">
+                                <div class="product_card-avatar">
+                                  <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                                </div>
+                                <div class="product_card-name">Radiustheme</div>
+                              </a>
+                              <div class="product_card-rate">
+                                <ul class="product_card-rating">
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="far fa-star"></i></li>
+                                </ul>
+                                <!-- <span class="product_card-counter">(11)</span> -->
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="product_card top-sell">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/80x35/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-inner">
+                            <div class="product_card-main">
+                              <div class="product_card-info">
+                                <a href="" class="product_card-title">Responsive Mobile APP</a>
+                                <div class="product_card-category">site template</div>
+                              </div>
+                              <div class="product_card-price">$19</div>
+                            </div>
+                            <div class="product_card-footer">
+                              <a href="#" class="product_card-author">
+                                <div class="product_card-avatar">
+                                  <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                                </div>
+                                <div class="product_card-name">Radiustheme</div>
+                              </a>
+                              <div class="product_card-rate">
+                                <ul class="product_card-rating">
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="far fa-star"></i></li>
+                                </ul>
+                                <!-- <span class="product_card-counter">(11)</span> -->
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <a href="" class="sidebar-full-width-btn">View All</a>
                     </div>
-                  </div>    
-                </div>
-              </div>              
+                  </div>
+                </aside>
+                <div class="content">
+                  <div class="content_toolbar">
+                    <div class="content_toolbar-left">
+                      <button class="btn_sort-order">
+                        <i class="fas fa-sort-amount-down"></i>
+                      </button>
+                      <span>Sort by: New Items</span>
+                      <button class="btn_sort">
+                        <i class=" fa fa-sort"></i>
+                      </button>
+                    </div>
+                    <div class="content_toolbar-right">
+                      <button class="btn_layout js_card"><i class="fas fa-th-large js_tabs-link tab-active"></i></button>
+                      <button class="btn_layout js_list"><i class="fas fa-th-list js_tabs-link"></i></button>
+                    </div>
+                  </div>
+                  <div class="content_row">
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-inner">
+                            <div class="product_card-main">
+                              <div class="product_card-info">
+                                <a href="" class="product_card-title">Team Component Pro</a>
+                                <div class="product_card-category">site template</div>
+                              </div>
+                              <div class="product_card-price">$19</div>
+                            </div>
+                            <div class="product_card-footer">
+                              <a href="#" class="product_card-author">
+                                <div class="product_card-avatar">
+                                  <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                                </div>
+                                <div class="product_card-name">Radiustheme</div>
+                              </a>
+                              <div class="product_card-rate">
+                                <ul class="product_card-rating">
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                  <li class="product_card-star active"><i class="far fa-star"></i></li>
+                                </ul>
+                                <span class="product_card-counter">(11)</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>  
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div> 
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>  
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div> 
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>  
+                    <div class="content_col">
+                      <div class="product_card">
+                          <div class="product_card-label product_card-label--most">
+                            <i class="fas fa-bolt"></i>
+                          </div>
+                          <a href="" class="product_card-img">
+                            <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="card images">
+                          </a>
+                          <div class="product_card-main">
+                            <div class="product_card-info">
+                              <a href="" class="product_card-title">Team Component Pro</a>
+                              <div class="product_card-category">site template</div>
+                            </div>
+                            <div class="product_card-price">$19</div>
+                          </div>
+                          <div class="product_card-footer">
+                            <a href="#" class="product_card-author">
+                              <div class="product_card-avatar">
+                                <img src="https://via.placeholder.com/30/d4d4d4/d4d4d4" alt="image description">
+                              </div>
+                              <div class="product_card-name">Radiustheme</div>
+                            </a>
+                            <div class="product_card-rate">
+                              <ul class="product_card-rating">
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="fas fa-star"></i></li>
+                                <li class="product_card-star active"><i class="far fa-star"></i></li>
+                              </ul>
+                              <span class="product_card-counter">(11)</span>
+                            </div>
+                          </div>
+                      </div>
+                    </div>   
+                  </div>
+                  <div class="row">
+                    <div class="pagination_col">
+                      <ul class="pagination-align-left">
+                        <li><a href="#" class="js_tabs-link tab-active" >1</a></li>
+                        <li><a href="#" class="js_tabs-link">2</a></li>
+                        <li><a href="#" class="js_tabs-link">3</a></li>
+                        <li><a href="#" class="js_tabs-link">4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>              
+              </div>
             </div>
-          </div>
+          </div>  
         </main>
         <footer class="footer">
           <div class="footer_top">

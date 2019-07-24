@@ -1,4 +1,28 @@
 .sidebar {
   width: 300px;
   padding: 0 15px;
+
+  @media(max-width: $tablet-df) {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  &_title {
+    border: none;
+    outline: none;
+    background: transparent;
+    pointer-events: none;
+
+    @media(max-width: $tablet-df){
+      pointer-events: auto;
+    }
+  }
+
+  &_main {
+
+    @media(max-width: $tablet-df) {
+      display: none;
+    }
+  }
 }
