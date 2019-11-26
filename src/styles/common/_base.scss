@@ -2,6 +2,21 @@ body {
   font: $base-f-size $base-f-family;
 }
 
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -21,4 +36,137 @@ body {
 .main {
   width: 100%;
   flex-grow: 1;
+}
+
+.desktop-hidden {
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-hidden {
+
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero {
+
+  &--alt {
+
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+
+  &_item {
+    font-size: 15px;
+    color: #263238;
+
+    &:not(:first-of-type) {
+
+      &:before {
+        content: '-';
+        color: $green;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &_link {
+    color: #b0bec5;
+  }
+}
+
+.content {
+  width: calc(100%-300px);
+  padding: 0 15px;
+
+  @media(max-width: $tablet-df) {
+    width: 100%;    
+  }
+
+  &:only-child {
+    width: 100%;
+  }
+
+  &_inner {
+    display: flex;
+    margin: 0 -15px;
+
+    @media(max-width: $tablet-df) {
+      display: block;
+    }
+  }
+
+  &_toolbar {
+
+    @media(max-width: $tablet-df) {
+      width: 100%;
+      margin: 0 auto 20px;
+      max-width: 290px;
+      display: flex;
+      justify-content: center;
+      padding: 0 15px;
+    }
+
+    &-right {
+
+      @media(max-width: $tablet-df) {
+        display: none;
+      }
+    }
+  }
+
+  &_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &.content_list{
+      display: block;
+
+      .content_col {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .product_card {
+        max-width: 100%;
+        display: flex;  
+        
+        &-img {
+          max-width: 220px;
+        }
+
+        &-inner {
+          flex-grow: 1;          
+        }
+
+        &-main {
+          padding: 15px;
+        }
+
+        &-title {
+          margin-bottom: 4px;
+        }
+
+        &-footer {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+
+  &_col {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    max-width: 300px;
+    min-width: 290px;
+  }
 }
